@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Matheus Mortatti</title>
-    <link>https://shenoybr.github.io/hugo-goa-demo/index.xml</link>
-    <description>Recent content on Matheus Mortatti</description>
+    <title>Abouts on Matheus Mortatti</title>
+    <link>https://shenoybr.github.io/hugo-goa-demo/about/index.xml</link>
+    <description>Recent content in Abouts on Matheus Mortatti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 17 Jan 2017 18:31:55 -0200</lastBuildDate>
-    <atom:link href="https://shenoybr.github.io/hugo-goa-demo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://shenoybr.github.io/hugo-goa-demo/about/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>about</title>

@@ -2,7 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://shenoybr.github.io/hugo-goa-demo/about/about/</loc>
+    <lastmod>2017-01-17T18:31:55-02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shenoybr.github.io/hugo-goa-demo/about/</loc>
+    <lastmod>2017-01-17T18:31:55-02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://shenoybr.github.io/hugo-goa-demo/</loc>
+    <lastmod>2017-01-17T18:31:55-02:00</lastmod>
     <priority>0</priority>
   </url>
   
