@@ -3,18 +3,40 @@
   
   <url>
     <loc>/matheusmortatti.com/about/</loc>
-    <lastmod>2017-01-17T23:02:21-02:00</lastmod>
+    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/matheusmortatti.com/tags/about/</loc>
+    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/matheusmortatti.com/categories/about/</loc>
+    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/matheusmortatti.com/about/</loc>
-    <lastmod>2017-01-17T23:02:21-02:00</lastmod>
+    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/matheusmortatti.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/matheusmortatti.com/</loc>
-    <lastmod>2017-01-17T23:02:21-02:00</lastmod>
+    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/matheusmortatti.com/tags/</loc>
     <priority>0</priority>
   </url>
   
