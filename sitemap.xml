@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://matheusmortatti.com/posts/first/</loc>
+    <loc>/matheusmortatti.com/posts/first/</loc>
     <lastmod>2017-01-18T17:26:50-02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://matheusmortatti.com/about/</loc>
+    <loc>/matheusmortatti.com/about/</loc>
     <lastmod>2015-06-20T14:02:37+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://matheusmortatti.com/about/</loc>
+    <loc>/matheusmortatti.com/about/</loc>
     <lastmod>2015-06-20T14:02:37+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://matheusmortatti.com/</loc>
+    <loc>/matheusmortatti.com/</loc>
     <lastmod>2017-01-18T17:26:50-02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://matheusmortatti.com/posts/</loc>
+    <loc>/matheusmortatti.com/posts/</loc>
     <lastmod>2017-01-18T17:26:50-02:00</lastmod>
     <priority>0</priority>
   </url>

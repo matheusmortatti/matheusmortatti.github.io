@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matheus Mortatti&#39;s Blog</title>
-    <link>http://matheusmortatti.com/index.xml</link>
+    <link>/matheusmortatti.com/index.xml</link>
     <description>Recent content on Matheus Mortatti&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 18 Jan 2017 17:26:50 -0200</lastBuildDate>
-    <atom:link href="http://matheusmortatti.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/matheusmortatti.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title></title>
-      <link>http://matheusmortatti.com/posts/first/</link>
+      <link>/matheusmortatti.com/posts/first/</link>
       <pubDate>Wed, 18 Jan 2017 17:26:50 -0200</pubDate>
       
-      <guid>http://matheusmortatti.com/posts/first/</guid>
+      <guid>/matheusmortatti.com/posts/first/</guid>
       <description>&lt;p&gt;Hey!&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://matheusmortatti.com/about/</link>
+      <link>/matheusmortatti.com/about/</link>
       <pubDate>Sat, 20 Jun 2015 14:02:37 +0200</pubDate>
       
-      <guid>http://matheusmortatti.com/about/</guid>
+      <guid>/matheusmortatti.com/about/</guid>
       <description>&lt;p&gt;blublublbub&lt;/p&gt;
 </description>
     </item>
