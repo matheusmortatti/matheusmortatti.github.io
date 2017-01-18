@@ -6,16 +6,18 @@
     <description>Recent content on Matheus Mortatti&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Jan 2017 17:26:50 -0200</lastBuildDate>
+    <lastBuildDate>Wed, 18 Jan 2017 19:15:42 -0200</lastBuildDate>
     <atom:link href="http://matheusmortatti.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title></title>
-      <link>http://matheusmortatti.com/posts/first/</link>
-      <pubDate>Wed, 18 Jan 2017 17:26:50 -0200</pubDate>
+      <title>Wolfbit Postmortem</title>
+      <link>http://matheusmortatti.com/posts/wolfbit/</link>
+      <pubDate>Wed, 18 Jan 2017 19:15:42 -0200</pubDate>
       
-      <guid>http://matheusmortatti.com/posts/first/</guid>
-      <description>&lt;p&gt;Hey!&lt;/p&gt;
+      <guid>http://matheusmortatti.com/posts/wolfbit/</guid>
+      <description>&lt;p&gt;Wolfbit was a game done by me and two other friends for the Ludum Dare 35, where I was responsible for the art, oddly enough. It was a different experience for me, as I never had done any pixel art before in my life and I had to do it in three days in a sort of decent way.&lt;/p&gt;
+
+&lt;div allign=&#34;center&#34;&gt;&lt;img src=&#34;http://matheusmortatti.com/images/wolfbit.gif&#34; /&gt; &lt;/div&gt;
 </description>
     </item>
     
