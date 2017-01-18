@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on Matheus Mortatti&#39;s Blog</title>
-    <link>/matheusmortatti.com/about/index.xml</link>
+    <link>http://matheusmortatti.com/about/index.xml</link>
     <description>Recent content in Abouts on Matheus Mortatti&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Jun 2015 14:02:37 +0200</lastBuildDate>
-    <atom:link href="/matheusmortatti.com/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://matheusmortatti.com/about/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About</title>
-      <link>/matheusmortatti.com/about/</link>
+      <link>http://matheusmortatti.com/about/</link>
       <pubDate>Sat, 20 Jun 2015 14:02:37 +0200</pubDate>
       
-      <guid>/matheusmortatti.com/about/</guid>
+      <guid>http://matheusmortatti.com/about/</guid>
       <description>&lt;p&gt;blublublbub&lt;/p&gt;
 </description>
     </item>
