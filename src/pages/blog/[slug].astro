@@ -13,8 +13,8 @@ export async function getStaticPaths() {
     params: { slug: post.slug },
     props: {
       post,
-      prevPost: index < sortedPosts.length - 1 ? sortedPosts[index + 1] : null,
-      nextPost: index > 0 ? sortedPosts[index - 1] : null,
+      prevPost: index < sortedPosts.length - 1 ? sortedPosts[index + 1] : undefined,
+      nextPost: index > 0 ? sortedPosts[index - 1] : undefined,
     },
   }));
 }
