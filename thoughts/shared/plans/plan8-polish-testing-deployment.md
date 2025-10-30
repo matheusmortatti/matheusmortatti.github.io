@@ -103,16 +103,16 @@ Fix any broken links found.
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] `npm run astro check` passes with no errors
-- [ ] `npm run build` succeeds with no warnings
-- [ ] No TypeScript errors
-- [ ] No broken links detected
-- [ ] HTML validates on W3C validator
+- [x] `npm run astro check` passes with no errors
+- [x] `npm run build` succeeds with no warnings
+- [x] No TypeScript errors
+- [x] No broken links detected
+- [x] HTML validates on W3C validator
 
 #### Manual Verification:
-- [ ] Preview server runs without issues
-- [ ] No console errors on any page
-- [ ] All pages load correctly
+- [x] Preview server runs without issues
+- [x] No console errors on any page
+- [x] All pages load correctly
 
 ---
 
@@ -554,20 +554,20 @@ Visit https://matheusmortatti.com and verify:
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] GitHub Actions workflow succeeds
-- [ ] No deployment errors
-- [ ] DNS resolves correctly
-- [ ] HTTPS certificate valid
+- [x] GitHub Actions workflow succeeds
+- [x] No deployment errors
+- [x] DNS resolves correctly
+- [x] HTTPS certificate valid
 
 #### Manual Verification:
-- [ ] Site accessible at matheusmortatti.com
-- [ ] All pages work
-- [ ] Images load
-- [ ] Theme toggle persists
-- [ ] Performance is good
-- [ ] Works on mobile
-- [ ] No console errors
-- [ ] Custom domain works with HTTPS
+- [x] Site accessible at matheusmortatti.com
+- [x] All pages work
+- [x] Images load
+- [x] Theme toggle persists
+- [x] Performance is good
+- [x] Works on mobile
+- [x] No console errors
+- [x] Custom domain works with HTTPS
 
 ---
 
