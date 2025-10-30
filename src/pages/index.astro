@@ -1,5 +1,7 @@
 ---
 // Minimal placeholder homepage
+import ThemeToggle from '../components/ThemeToggle.astro';
+import '../styles/global.css';
 ---
 
 <html lang="en">
@@ -7,9 +9,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Matheus Mortatti</title>
+    <script is:inline>
+      // Theme initialization - runs immediately to prevent FOUC
+      (function() {
+        const STORAGE_KEY = 'theme';
+        const stored = localStorage.getItem(STORAGE_KEY);
+
+        if (stored === 'mocha' || stored === 'latte') {
+          document.documentElement.setAttribute('data-theme', stored);
+        } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+          document.documentElement.setAttribute('data-theme', 'latte');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'mocha');
+        }
+      })();
+    </script>
   </head>
   <body>
-    <h1>Matheus Mortatti</h1>
-    <p>Site under construction - Coming soon!</p>
+    <div class="container">
+      <div style="display: flex; justify-content: flex-end; padding: var(--spacing-4) 0;">
+        <ThemeToggle />
+      </div>
+      <h1>Matheus Mortatti</h1>
+      <p>Site under construction - Coming soon!</p>
+    </div>
   </body>
 </html>

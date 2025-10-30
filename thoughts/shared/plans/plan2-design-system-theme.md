@@ -147,13 +147,13 @@ Define both Mocha and Latte color palettes using CSS custom properties.
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] CSS file has no syntax errors
-- [ ] All custom properties are defined for both themes
-- [ ] Build succeeds: `npm run build`
+- [x] CSS file has no syntax errors
+- [x] All custom properties are defined for both themes
+- [x] Build succeeds: `npm run build`
 
 #### Manual Verification:
-- [ ] Inspect element shows correct CSS variables in dev tools
-- [ ] Both theme datasets apply correctly when toggled in dev tools
+- [x] Inspect element shows correct CSS variables in dev tools
+- [x] Both theme datasets apply correctly when toggled in dev tools
 
 ---
 
@@ -274,14 +274,14 @@ pre code {
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] CSS validates without errors
-- [ ] Build succeeds with typography styles
+- [x] CSS validates without errors
+- [x] Build succeeds with typography styles
 
 #### Manual Verification:
-- [ ] Headings render with correct sizes and weights
-- [ ] Body text is readable at base font size
-- [ ] Links have hover states
-- [ ] Code blocks have proper styling
+- [x] Headings render with correct sizes and weights
+- [x] Body text is readable at base font size
+- [x] Links have hover states
+- [x] Code blocks have proper styling
 
 ---
 
@@ -337,12 +337,12 @@ Define consistent spacing units based on 8px grid and border radius values.
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] CSS validates without errors
-- [ ] All spacing variables defined
+- [x] CSS validates without errors
+- [x] All spacing variables defined
 
 #### Manual Verification:
-- [ ] Spacing values follow 8px grid
-- [ ] Border radius values create "cozy" feel
+- [x] Spacing values follow 8px grid
+- [x] Border radius values create "cozy" feel
 
 ---
 
@@ -454,15 +454,15 @@ body {
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] All CSS imports resolve correctly
-- [ ] Build succeeds: `npm run build`
-- [ ] No CSS syntax errors
+- [x] All CSS imports resolve correctly
+- [x] Build succeeds: `npm run build`
+- [x] No CSS syntax errors
 
 #### Manual Verification:
-- [ ] Page has no unstyled flash on load
-- [ ] Scrollbar matches theme colors
-- [ ] Text selection uses accent color
-- [ ] Focus indicators visible on tab navigation
+- [x] Page has no unstyled flash on load
+- [x] Scrollbar matches theme colors
+- [x] Text selection uses accent color
+- [x] Focus indicators visible on tab navigation
 
 ---
 
@@ -628,17 +628,17 @@ Build client-side theme toggle with localStorage persistence and smooth transiti
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] TypeScript compiles without errors
-- [ ] Component renders without errors
-- [ ] Build succeeds
+- [x] TypeScript compiles without errors
+- [x] Component renders without errors
+- [x] Build succeeds
 
 #### Manual Verification:
-- [ ] Theme toggle button appears and is clickable
-- [ ] Clicking toggles between Mocha and Latte
-- [ ] Theme persists after page reload
-- [ ] No flash of wrong theme on page load
-- [ ] Icons animate smoothly during toggle
-- [ ] Respects system preference if no stored preference
+- [x] Theme toggle button appears and is clickable
+- [x] Clicking toggles between Mocha and Latte
+- [x] Theme persists after page reload
+- [x] No flash of wrong theme on page load
+- [x] Icons animate smoothly during toggle
+- [x] Respects system preference if no stored preference
 
 ---
 

@@ -1,0 +1,91 @@
+/* Catppuccin Mocha (Dark Theme) */
+:root[data-theme="mocha"],
+:root {
+  /* Base colors */
+  --color-base: #1e1e2e;
+  --color-mantle: #181825;
+  --color-crust: #11111b;
+
+  /* Surface colors */
+  --color-surface-0: #313244;
+  --color-surface-1: #45475a;
+  --color-surface-2: #585b70;
+
+  /* Text colors */
+  --color-text: #cdd6f4;
+  --color-subtext-1: #bac2de;
+  --color-subtext-0: #a6adc8;
+
+  /* Overlay colors */
+  --color-overlay-0: #6c7086;
+  --color-overlay-1: #7f849c;
+  --color-overlay-2: #9399b2;
+
+  /* Accent colors */
+  --color-blue: #89b4fa;
+  --color-pink: #f5c2e7;
+  --color-mauve: #cba6f7;
+  --color-red: #f38ba8;
+  --color-peach: #fab387;
+  --color-yellow: #f9e2af;
+  --color-green: #a6e3a1;
+  --color-teal: #94e2d5;
+  --color-sky: #89dceb;
+  --color-sapphire: #74c7ec;
+  --color-lavender: #b4befe;
+
+  /* Semantic colors */
+  --color-primary: var(--color-blue);
+  --color-secondary: var(--color-pink);
+  --color-accent: var(--color-mauve);
+  --color-link: var(--color-blue);
+  --color-link-hover: var(--color-sky);
+}
+
+/* Catppuccin Latte (Light Theme) */
+:root[data-theme="latte"] {
+  /* Base colors */
+  --color-base: #eff1f5;
+  --color-mantle: #e6e9ef;
+  --color-crust: #dce0e8;
+
+  /* Surface colors */
+  --color-surface-0: #ccd0da;
+  --color-surface-1: #bcc0cc;
+  --color-surface-2: #acb0be;
+
+  /* Text colors */
+  --color-text: #4c4f69;
+  --color-subtext-1: #5c5f77;
+  --color-subtext-0: #6c6f85;
+
+  /* Overlay colors */
+  --color-overlay-0: #9ca0b0;
+  --color-overlay-1: #8c8fa1;
+  --color-overlay-2: #7c7f93;
+
+  /* Accent colors */
+  --color-blue: #1e66f5;
+  --color-pink: #ea76cb;
+  --color-mauve: #8839ef;
+  --color-red: #d20f39;
+  --color-peach: #fe640b;
+  --color-yellow: #df8e1d;
+  --color-green: #40a02b;
+  --color-teal: #179299;
+  --color-sky: #04a5e5;
+  --color-sapphire: #209fb5;
+  --color-lavender: #7287fd;
+
+  /* Semantic colors */
+  --color-primary: var(--color-blue);
+  --color-secondary: var(--color-pink);
+  --color-accent: var(--color-mauve);
+  --color-link: var(--color-blue);
+  --color-link-hover: var(--color-sky);
+}
+
+/* Theme transition */
+:root {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
