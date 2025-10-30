@@ -7,9 +7,11 @@ import BlogCard from '../../components/blog/BlogCard.astro';
 
 // Get all blog posts and sort by date (newest first)
 const allPosts = await getCollection('blog');
-const sortedPosts = allPosts.sort((a, b) => {
-  return b.data.date.getTime() - a.data.date.getTime();
-});
+const sortedPosts = allPosts
+  .filter(post => !post.data.archived) // Exclude archived posts
+  .sort((a, b) => {
+    return b.data.date.getTime() - a.data.date.getTime();
+  });
 ---
 
 <BaseLayout
@@ -26,6 +28,15 @@ const sortedPosts = allPosts.sort((a, b) => {
           Thoughts on game development, programming, and technology
         </p>
       </header>
+
+      <div class="archive-link-banner">
+        <p>
+          Looking for posts from
+          <a href="/blog/archive" class="archive-link">
+            the archive? →
+          </a>
+        </p>
+      </div>
 
       <div class="search-container">
         <input
@@ -79,6 +90,27 @@ const sortedPosts = allPosts.sort((a, b) => {
   .page-description {
     font-size: var(--font-size-lg);
     color: var(--color-subtext-1);
+  }
+
+  .archive-link-banner {
+    padding: var(--spacing-3) var(--spacing-4);
+    margin-bottom: var(--spacing-6);
+    background: var(--color-surface-0);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    font-size: var(--font-size-base);
+    color: var(--color-subtext-1);
+  }
+
+  .archive-link {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    margin-left: var(--spacing-2);
+  }
+
+  .archive-link:hover {
+    text-decoration: underline;
   }
 
   .search-container {

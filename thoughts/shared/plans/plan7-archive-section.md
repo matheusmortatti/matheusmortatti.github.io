@@ -320,17 +320,17 @@ const archivedPosts = allPosts
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Page compiles without errors
-- [ ] Only archived posts included
-- [ ] Build succeeds: `npm run build`
+- [x] Page compiles without errors
+- [x] Only archived posts included
+- [x] Build succeeds: `npm run build`
 
 #### Manual Verification:
-- [ ] Archive page accessible at /blog/archive
-- [ ] Only posts with `archived: true` appear
-- [ ] Info box explains archive purpose
-- [ ] Search functionality works
-- [ ] "Back to Blog" link works
-- [ ] Responsive on mobile
+- [x] Archive page accessible at /blog/archive
+- [x] Only posts with `archived: true` appear
+- [x] Info box explains archive purpose
+- [x] Search functionality works
+- [x] "Back to Blog" link works
+- [x] Responsive on mobile
 
 ---
 
@@ -385,13 +385,13 @@ Add corresponding styles:
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Page compiles without errors
-- [ ] Build succeeds
+- [x] Page compiles without errors
+- [x] Build succeeds
 
 #### Manual Verification:
-- [ ] Archive link banner appears on blog listing
-- [ ] Link navigates to /blog/archive
-- [ ] Banner styled consistently
+- [x] Archive link banner appears on blog listing
+- [x] Link navigates to /blog/archive
+- [x] Banner styled consistently
 
 ---
 
@@ -435,14 +435,14 @@ Update the archive link banner text:
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Page compiles without errors
-- [ ] Build succeeds
+- [x] Page compiles without errors
+- [x] Build succeeds
 
 #### Manual Verification:
-- [ ] Main blog shows only non-archived posts
-- [ ] Archive shows only archived posts
-- [ ] No overlap between the two pages
-- [ ] User can still find all content
+- [x] Main blog shows only non-archived posts
+- [x] Archive shows only archived posts
+- [x] No overlap between the two pages
+- [x] User can still find all content
 
 **Decision Point**: Discuss with user whether to implement this filter or keep archived posts visible in both locations.
 
