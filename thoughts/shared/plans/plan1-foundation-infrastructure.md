@@ -96,16 +96,16 @@ Ensure CNAME exists in `public/` directory so it's copied to build output.
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] `npm install` completes without errors
-- [ ] `npm run dev` starts development server on localhost:4321
-- [ ] `npm run build` produces dist directory
-- [ ] `npm run preview` serves built site
-- [ ] TypeScript compilation passes: `npx astro check`
+- [x] `npm install` completes without errors
+- [x] `npm run dev` starts development server on localhost:4321
+- [x] `npm run build` produces dist directory
+- [x] `npm run preview` serves built site
+- [x] TypeScript compilation passes: `npx astro check`
 
 #### Manual Verification:
-- [ ] Visit localhost:4321 and see default Astro page
-- [ ] CNAME file exists in public/ directory
-- [ ] Project structure matches expected Astro layout
+- [x] Visit localhost:4321 and see default Astro page
+- [x] CNAME file exists in public/ directory
+- [x] Project structure matches expected Astro layout
 
 ---
 
@@ -206,9 +206,9 @@ pnpm-debug.log*
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Workflow file is valid YAML: `npx yaml-lint .github/workflows/deploy.yml`
-- [ ] Git repository clean after adding files: `git status`
-- [ ] No secrets or credentials in committed files
+- [x] Workflow file is valid YAML: `npx yaml-lint .github/workflows/deploy.yml`
+- [x] Git repository clean after adding files: `git status`
+- [x] No secrets or credentials in committed files
 
 #### Manual Verification:
 - [ ] GitHub Actions workflow appears in repository Actions tab
@@ -280,14 +280,14 @@ export const collections = { blog };
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] All directories exist: `ls -la src/`
-- [ ] TypeScript config validates: `npx astro check`
-- [ ] Build succeeds with new structure: `npm run build`
-- [ ] Content collection config has no type errors
+- [x] All directories exist: `ls -la src/`
+- [x] TypeScript config validates: `npx astro check`
+- [x] Build succeeds with new structure: `npm run build`
+- [x] Content collection config has no type errors
 
 #### Manual Verification:
-- [ ] Directory structure matches plan in REBUILD_PLAN.md
-- [ ] Index page renders "Site under construction" message
+- [x] Directory structure matches plan in REBUILD_PLAN.md
+- [x] Index page renders "Site under construction" message
 - [ ] No 404 errors when visiting localhost:4321
 
 ---
@@ -322,7 +322,7 @@ git push origin master
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Git push succeeds without errors
+- [x] Git push succeeds without errors
 - [ ] GitHub Actions workflow triggers automatically
 - [ ] Workflow completes successfully (green checkmark)
 - [ ] Build artifact is uploaded
