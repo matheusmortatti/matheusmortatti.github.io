@@ -345,17 +345,17 @@ const formattedDate = date.toLocaleDateString('en-US', {
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Layout compiles without errors
-- [ ] TypeScript types valid
-- [ ] Build succeeds
+- [x] Layout compiles without errors
+- [x] TypeScript types valid
+- [x] Build succeeds
 
 #### Manual Verification:
-- [ ] Post header displays correctly
-- [ ] Archived notice shows for old posts
-- [ ] Markdown content styled properly
-- [ ] Code blocks readable
-- [ ] Images display correctly
-- [ ] Links styled and functional
+- [x] Post header displays correctly
+- [x] Archived notice shows for old posts
+- [x] Markdown content styled properly
+- [x] Code blocks readable
+- [x] Images display correctly
+- [x] Links styled and functional
 
 ---
 
@@ -405,15 +405,15 @@ const readingTime = `${Math.ceil(words / 200)} min read`;
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Pages generate for all blog posts
-- [ ] Build succeeds: `npm run build`
-- [ ] All post URLs work
+- [x] Pages generate for all blog posts
+- [x] Build succeeds: `npm run build`
+- [x] All post URLs work
 
 #### Manual Verification:
-- [ ] Can access posts at /blog/[slug]
-- [ ] Content renders correctly
-- [ ] Reading time calculated
-- [ ] All Markdown features render
+- [x] Can access posts at /blog/[slug]
+- [x] Content renders correctly
+- [x] Reading time calculated
+- [x] All Markdown features render
 
 ---
 
@@ -728,17 +728,17 @@ const sortedPosts = allPosts.sort((a, b) => {
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Page compiles without errors
-- [ ] All posts appear in list
-- [ ] Build succeeds
+- [x] Page compiles without errors
+- [x] All posts appear in list
+- [x] Build succeeds
 
 #### Manual Verification:
-- [ ] Blog listing page loads at /blog
-- [ ] Posts sorted by date (newest first)
-- [ ] Search input filters posts by title
-- [ ] "No results" message shows when appropriate
-- [ ] Click on post navigates to detail page
-- [ ] Archived badge shows for old posts
+- [x] Blog listing page loads at /blog
+- [x] Posts sorted by date (newest first)
+- [x] Search input filters posts by title
+- [x] "No results" message shows when appropriate
+- [x] Click on post navigates to detail page
+- [x] Archived badge shows for old posts
 
 ---
 
@@ -897,16 +897,16 @@ const readingTime = `${Math.ceil(words / 200)} min read`;
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Component compiles without errors
-- [ ] Navigation links generated correctly
-- [ ] Build succeeds
+- [x] Component compiles without errors
+- [x] Navigation links generated correctly
+- [x] Build succeeds
 
 #### Manual Verification:
-- [ ] Previous/next links appear at bottom of posts
-- [ ] Links navigate to correct posts
-- [ ] Navigation respects chronological order
-- [ ] First post has no "previous" link
-- [ ] Last post has no "next" link
+- [x] Previous/next links appear at bottom of posts
+- [x] Links navigate to correct posts
+- [x] Navigation respects chronological order
+- [x] First post has no "previous" link
+- [x] Last post has no "next" link
 
 ---
 

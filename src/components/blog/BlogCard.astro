@@ -1,0 +1,122 @@
+---
+interface Props {
+  title: string;
+  slug: string;
+  date: Date;
+  description?: string;
+  tags?: string[];
+  archived?: boolean;
+}
+
+const { title, slug, date, description, tags, archived } = Astro.props;
+
+const formattedDate = date.toLocaleDateString('en-US', {
+  month: 'short',
+  day: 'numeric',
+  year: 'numeric',
+});
+---
+
+<article class="blog-card">
+  <a href={`/blog/${slug}`} class="card-link">
+    <div class="card-header">
+      <time datetime={date.toISOString()} class="card-date">
+        {formattedDate}
+      </time>
+      {archived && (
+        <span class="archived-badge">Archived</span>
+      )}
+    </div>
+
+    <h2 class="card-title">{title}</h2>
+
+    {description && (
+      <p class="card-description">{description}</p>
+    )}
+
+    {tags && tags.length > 0 && (
+      <div class="card-tags">
+        {tags.map(tag => (
+          <span class="tag">{tag}</span>
+        ))}
+      </div>
+    )}
+  </a>
+</article>
+
+<style>
+  .blog-card {
+    padding: var(--spacing-4);
+    border-radius: var(--radius-lg);
+    border: 1px solid transparent;
+    transition: border-color var(--transition-base),
+                background-color var(--transition-base);
+  }
+
+  .blog-card:hover {
+    background: var(--color-surface-0);
+    border-color: var(--color-surface-1);
+  }
+
+  .card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    margin-bottom: var(--spacing-2);
+  }
+
+  .card-date {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary);
+  }
+
+  .archived-badge {
+    padding: 0.125rem var(--spacing-2);
+    background: var(--color-yellow);
+    color: var(--color-base);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+  }
+
+  .card-title {
+    margin-bottom: var(--spacing-2);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text);
+    line-height: var(--line-height-snug);
+  }
+
+  .blog-card:hover .card-title {
+    color: var(--color-primary);
+  }
+
+  .card-description {
+    margin-bottom: var(--spacing-2);
+    font-size: var(--font-size-base);
+    color: var(--color-subtext-1);
+    line-height: var(--line-height-normal);
+  }
+
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-1);
+  }
+
+  .tag {
+    padding: 0.125rem var(--spacing-2);
+    background: var(--color-surface-1);
+    color: var(--color-subtext-1);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-xs);
+  }
+</style>
