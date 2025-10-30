@@ -2,6 +2,7 @@
 @import './themes.css';
 @import './typography.css';
 @import './spacing.css';
+@import './utilities.css';
 
 /* CSS Reset */
 *, *::before, *::after {

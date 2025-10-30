@@ -1,0 +1,159 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = Astro.url.pathname } = Astro.props;
+
+const navItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Archive', href: '/blog/archive' },
+];
+
+function isActive(path: string): boolean {
+  if (path === '/') {
+    return currentPath === '/';
+  }
+  return currentPath.startsWith(path);
+}
+---
+
+<header class="site-header">
+  <div class="container header-content">
+    <div class="header-left">
+      <a href="/" class="site-logo">
+        <span class="logo-text">MM</span>
+      </a>
+    </div>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        {navItems.map(item => (
+          <li class="nav-item">
+            <a
+              href={item.href}
+              class:list={['nav-link', { active: isActive(item.href) }]}
+              aria-current={isActive(item.href) ? 'page' : undefined}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="header-right">
+      <ThemeToggle />
+    </div>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    background-color: var(--color-base);
+    border-bottom: 1px solid var(--color-surface-0);
+    backdrop-filter: blur(8px);
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--spacing-3);
+    padding-bottom: var(--spacing-3);
+  }
+
+  .header-left,
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .site-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-xl);
+    transition: color var(--transition-base);
+  }
+
+  .site-logo:hover {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .logo-text {
+    font-family: var(--font-mono);
+  }
+
+  .site-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: var(--spacing-4);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .nav-link {
+    display: block;
+    padding: var(--spacing-1) var(--spacing-2);
+    color: var(--color-subtext-1);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    transition: color var(--transition-base),
+                background-color var(--transition-base);
+  }
+
+  .nav-link:hover {
+    color: var(--color-text);
+    background-color: var(--color-surface-0);
+    text-decoration: none;
+  }
+
+  .nav-link.active {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-medium);
+  }
+
+  /* Mobile responsive */
+  @media (max-width: 640px) {
+    .header-content {
+      flex-wrap: wrap;
+      gap: var(--spacing-2);
+    }
+
+    .site-nav {
+      order: 3;
+      width: 100%;
+      justify-content: flex-start;
+    }
+
+    .nav-list {
+      gap: var(--spacing-2);
+    }
+
+    .nav-link {
+      padding: var(--spacing-1);
+      font-size: var(--font-size-sm);
+    }
+  }
+</style>

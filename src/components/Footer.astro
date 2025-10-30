@@ -1,0 +1,113 @@
+---
+const currentYear = new Date().getFullYear();
+
+const socialLinks = [
+  { label: 'GitHub', href: 'https://github.com/matheusmortatti', icon: 'github' },
+  { label: 'Twitter', href: 'https://twitter.com/matheusmortatti', icon: 'twitter' },
+  { label: 'Email', href: 'mailto:matheus@mortatti.com', icon: 'email' },
+];
+---
+
+<footer class="site-footer">
+  <div class="container footer-content">
+    <div class="footer-section">
+      <p class="footer-text">
+        © {currentYear} Matheus Mortatti. Built with <a href="https://astro.build" target="_blank" rel="noopener">Astro</a>.
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <ul class="social-links">
+        {socialLinks.map(link => (
+          <li class="social-item">
+            <a
+              href={link.href}
+              class="social-link"
+              target={link.href.startsWith('http') ? '_blank' : undefined}
+              rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+              aria-label={link.label}
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    width: 100%;
+    border-top: 1px solid var(--color-surface-0);
+    background-color: var(--color-base);
+    margin-top: var(--spacing-8);
+  }
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--spacing-6);
+    padding-bottom: var(--spacing-6);
+    gap: var(--spacing-4);
+  }
+
+  .footer-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-text {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: var(--color-subtext-1);
+  }
+
+  .footer-text a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .footer-text a:hover {
+    text-decoration: underline;
+  }
+
+  .social-links {
+    display: flex;
+    gap: var(--spacing-3);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-item {
+    margin: 0;
+  }
+
+  .social-link {
+    display: block;
+    padding: var(--spacing-1);
+    color: var(--color-subtext-1);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    transition: color var(--transition-base);
+  }
+
+  .social-link:hover {
+    color: var(--color-primary);
+  }
+
+  /* Mobile responsive */
+  @media (max-width: 640px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .social-links {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+</style>
