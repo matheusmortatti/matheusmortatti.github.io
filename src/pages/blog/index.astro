@@ -30,12 +30,9 @@ const sortedPosts = allPosts
       </header>
 
       <div class="archive-link-banner">
-        <p>
-          Looking for posts from
-          <a href="/blog/archive" class="archive-link">
-            the archive? →
-          </a>
-        </p>
+        <a href="/blog/archive" class="archive-link">
+          Looking for posts from the archive? →
+        </a>
       </div>
 
       <div class="search-container">
@@ -93,20 +90,15 @@ const sortedPosts = allPosts
   }
 
   .archive-link-banner {
-    padding: var(--spacing-3) var(--spacing-4);
     margin-bottom: var(--spacing-6);
-    background: var(--color-surface-0);
-    border-radius: var(--radius-lg);
     text-align: center;
-    font-size: var(--font-size-base);
-    color: var(--color-subtext-1);
   }
 
   .archive-link {
     color: var(--color-primary);
     font-weight: var(--font-weight-medium);
     text-decoration: none;
-    margin-left: var(--spacing-2);
+    font-size: var(--font-size-base);
   }
 
   .archive-link:hover {
