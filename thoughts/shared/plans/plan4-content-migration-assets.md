@@ -74,13 +74,13 @@ Read each located post file completely to understand structure and extract conte
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] All blog post HTML files located
-- [ ] File list documented
+- [x] All blog post HTML files located
+- [x] File list documented
 
 #### Manual Verification:
-- [ ] Can read each post file successfully
-- [ ] Understand content structure and embedded images
-- [ ] Identify all assets referenced in posts
+- [x] Can read each post file successfully
+- [x] Understand content structure and embedded images
+- [x] Identify all assets referenced in posts
 
 ---
 
@@ -125,15 +125,15 @@ Update image paths in Markdown to use `/images/` prefix.
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Markdown file parses without errors
-- [ ] Frontmatter validates against schema: `npm run build`
-- [ ] All referenced images exist in filesystem
+- [x] Markdown file parses without errors
+- [x] Frontmatter validates against schema: `npm run build`
+- [x] All referenced images exist in filesystem
 
 #### Manual Verification:
-- [ ] Content matches original HTML post
-- [ ] Images render correctly in preview
-- [ ] Links are functional
-- [ ] Formatting preserved (headings, lists, emphasis)
+- [x] Content matches original HTML post
+- [x] Images render correctly in preview
+- [x] Links are functional
+- [x] Formatting preserved (headings, lists, emphasis)
 
 ---
 
@@ -164,14 +164,14 @@ Follow same conversion process as Wolfbit post.
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Markdown file parses without errors
-- [ ] Frontmatter validates against schema
-- [ ] Build succeeds with both posts
+- [x] Markdown file parses without errors
+- [x] Frontmatter validates against schema
+- [x] Build succeeds with both posts
 
 #### Manual Verification:
-- [ ] Content matches original
-- [ ] All links functional
-- [ ] Formatting preserved
+- [x] Content matches original
+- [x] All links functional
+- [x] Formatting preserved
 
 ---
 
@@ -224,15 +224,15 @@ ls -la public/pdf/
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] All files exist in public/ directories
-- [ ] Build includes assets in dist/: `npm run build && ls dist/images/`
-- [ ] No missing file errors during build
+- [x] All files exist in public/ directories
+- [x] Build includes assets in dist/: `npm run build && ls dist/images/`
+- [x] No missing file errors during build
 
 #### Manual Verification:
-- [ ] Images load at /images/* URLs
-- [ ] Favicon appears in browser tab
-- [ ] PDF accessible at /pdf/matheus-mortatti-cv.pdf
-- [ ] No 404 errors for any assets
+- [x] Images load at /images/* URLs
+- [x] Favicon appears in browser tab
+- [x] PDF accessible at /pdf/matheus-mortatti-cv.pdf
+- [x] No 404 errors for any assets
 
 ---
 
@@ -285,15 +285,15 @@ rm src/pages/test-content.astro
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Content collection returns all blog posts
-- [ ] No schema validation errors
-- [ ] Build succeeds: `npm run build`
-- [ ] TypeScript types generated for content
+- [x] Content collection returns all blog posts
+- [x] No schema validation errors
+- [x] Build succeeds: `npm run build`
+- [x] TypeScript types generated for content
 
 #### Manual Verification:
-- [ ] Console logs show correct number of posts
-- [ ] Post titles and dates are correct
-- [ ] No parsing errors for Markdown content
+- [x] Console logs show correct number of posts
+- [x] Post titles and dates are correct
+- [x] No parsing errors for Markdown content
 
 ---
 
@@ -352,16 +352,16 @@ rm -rf pdf/
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Legacy files moved to archive/
-- [ ] Original asset directories removed
-- [ ] Build still succeeds: `npm run build`
-- [ ] Git status clean
+- [x] Legacy files moved to archive/
+- [x] Original asset directories removed
+- [x] Build still succeeds: `npm run build`
+- [x] Git status clean
 
 #### Manual Verification:
-- [ ] Archive directory contains all legacy files
-- [ ] New site uses only public/ assets
-- [ ] No broken references to old locations
-- [ ] Site still functions correctly
+- [x] Archive directory contains all legacy files
+- [x] New site uses only public/ assets
+- [x] No broken references to old locations
+- [x] Site still functions correctly
 
 ---
 
@@ -410,13 +410,13 @@ Stay tuned!
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Post validates and builds
-- [ ] Content collection includes new post
+- [x] Post validates and builds
+- [x] Content collection includes new post
 
 #### Manual Verification:
-- [ ] Post content is appropriate
-- [ ] Date is current
-- [ ] Post will appear in blog listing (verified in Plan 6)
+- [x] Post content is appropriate
+- [x] Date is current
+- [x] Post will appear in blog listing (verified in Plan 6)
 
 ---
 
