@@ -1,43 +1,135 @@
-# Astro Starter Kit: Minimal
+# matheusmortatti.com
 
-```sh
-npm create astro@latest -- --template minimal
+Personal website and blog built with Astro 5 and deployed to GitHub Pages.
+
+**Live Site:** https://matheusmortatti.com
+
+## Tech Stack
+
+- **Framework:** Astro 5 (Static Site Generator)
+- **Styling:** Custom CSS with Catppuccin color scheme
+- **Deployment:** GitHub Pages
+- **Content:** Markdown-based blog posts with Content Collections
+
+## Features
+
+- **Blog System:** Markdown-based blog posts with frontmatter metadata
+- **Theme Toggle:** Dark/light mode with Catppuccin Mocha/Latte themes
+- **Reading Time:** Automatic calculation for blog posts
+- **SEO Optimized:** Meta tags, sitemap, and proper semantic HTML
+- **Navigation:** Previous/next post links, chronological ordering
+- **Archive System:** Support for archived posts
+- **Fast & Lightweight:** Static site generation for optimal performance
+
+## Development
+
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Setup
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Visit `http://localhost:4321` to view the site.
 
-## 🚀 Project Structure
+### Available Commands
 
-Inside of your Astro project, you'll see the following folders and files:
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start local dev server at `localhost:4321` |
+| `npm run build` | Build production site (with type checking) |
+| `npm run preview` | Preview production build locally |
+| `npm run astro ...` | Run Astro CLI commands |
 
-```text
+## Project Structure
+
+```
 /
-├── public/
+├── public/              # Static assets (images, PDFs, favicon)
+│   ├── CNAME           # Custom domain configuration
+│   └── .nojekyll       # Disable GitHub Pages Jekyll processing
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/     # Reusable Astro components
+│   │   ├── blog/      # Blog-specific components
+│   │   ├── Header.astro
+│   │   ├── Footer.astro
+│   │   └── ThemeToggle.astro
+│   ├── content/
+│   │   ├── blog/      # Blog post markdown files
+│   │   └── config.ts  # Content collection schemas
+│   ├── layouts/
+│   │   ├── BaseLayout.astro    # Base layout with SEO
+│   │   └── BlogPost.astro      # Blog post layout
+│   ├── pages/         # File-based routing
+│   │   ├── index.astro         # Homepage
+│   │   └── blog/
+│   │       ├── index.astro     # Blog listing
+│   │       └── [slug].astro    # Dynamic blog posts
+│   ├── scripts/       # Client-side JavaScript
+│   └── styles/        # Global CSS
+├── astro.config.mjs   # Astro configuration
+└── CLAUDE.md          # AI assistant instructions
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Adding Blog Posts
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+1. Create a new Markdown file in `src/content/blog/`
+2. Add frontmatter metadata:
 
-Any static assets, like images, can be placed in the `public/` directory.
+```markdown
+---
+title: "Your Post Title"
+date: 2024-01-15
+description: "Optional description"
+tags: ["tag1", "tag2"]
+archived: false
+---
 
-## 🧞 Commands
+Your content here...
+```
 
-All commands are run from the root of the project, from a terminal:
+3. The post will automatically appear in the blog listing at `/blog/`
+4. Individual post URL: `/blog/{filename}/`
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### Frontmatter Fields
 
-## 👀 Want to learn more?
+- **title** (required): Post title
+- **date** (required): Publication date (YYYY-MM-DD)
+- **description** (optional): Post description for SEO/previews
+- **tags** (optional): Array of tag strings
+- **archived** (optional): Boolean to mark posts as archived
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Theme System
+
+The site uses Catppuccin color schemes:
+- **Mocha** (dark theme)
+- **Latte** (light theme)
+
+Theme preference is stored in localStorage and respects system preferences by default. Theme initialization happens inline to prevent flash of unstyled content (FOUC).
+
+## Deployment
+
+The site is automatically deployed to GitHub Pages when changes are pushed to the `master` branch.
+
+### Build Process
+
+1. Type checking with `astro check`
+2. Static site generation with `astro build`
+3. Output to `./dist/` directory
+4. Sitemap generation at `/sitemap-index.xml`
+
+### Custom Domain
+
+The site uses a custom domain configured via the `public/CNAME` file.
+
+## License
+
+Personal website - all rights reserved.
